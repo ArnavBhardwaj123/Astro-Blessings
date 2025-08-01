@@ -13,362 +13,102 @@
 </head>
 
 <body>
-    <!-- Background decorative elements -->
-    <div class="bg-decorations">
-        <div class="star-decoration star-1">✦</div>
-        <div class="star-decoration star-2">✧</div>
-        <div class="star-decoration star-3">✦</div>
-        <div class="star-decoration star-4">✧</div>
-        <div class="star-decoration star-5">✦</div>
-        <div class="star-decoration star-6">✧</div>
-        <div class="star-decoration star-7">✦</div>
-        <div class="star-decoration star-8">✧</div>
-        <div class="moon-decoration">🌙</div>
-        <div class="sun-decoration">☀️</div>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <div class="logo-symbol">◐</div>
-                <span class="logo-text">Astro Blessings</span>
-            </div>
-            <nav class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#astrologers" class="nav-link">Our Astrologers</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">
-                            Professional Astrology Services for Your Life's Journey
-                        </h1>
-                        <p class="hero-description">
-                            Experience the wisdom of certified astrologers who provide personalized guidance through
-                            Vedic astrology, tarot readings, and Vastu consultations. Discover your true path with
-                            professional insights.
-                        </p>
-                        <div class="hero-buttons">
-                            <button class="chat-now-btn" onclick="openWhatsApp()">
-                                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                            </button>
-                            <button class="learn-more-btn" onclick="scrollToAstrologers()">
-                                Meet Our Astrologers
-                            </button>
-                        </div>
-                        
-                    </div>
-                    <div class="hero-image">
-                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="Astrology Illustration">
-                    </div>
+    <section class="main-section">
+        <div class="container main-grid">
+            <!-- Left: Info & Instructions -->
+            <div class="info-card">
+                <h1 class="info-title">Astro Blessings</h1>
+                <div class="logo-wrap">
+                    <img src="smartpages-Astroblessings-ivory-purp-79bfc018f0be479c80ba-Ivory Purple Green Minimalistic Astrology Couch Logo.png" alt="Astro Blessings" class="info-logo">
                 </div>
-        </section>
-
-        <!-- USP Section -->
-        <section id="about" class="usp-section">
-            <div class="container">
-                <div class="usp-content">
-                    <h2 class="section-title">Why Choose Astro Blessings?</h2>
-                    <div class="usp-grid">
-                        <div class="usp-card">
-                            <div class="usp-icon">🔮</div>
-                            <h3>Certified Astrologers</h3>
-                            <p>Our astrologers are professionally certified with verified credentials and years of
-                                experience in Vedic astrology.</p>
-                        </div>
-                        <div class="usp-card">
-                            <div class="usp-icon">⭐</div>
-                            <h3>Personalized Readings</h3>
-                            <p>Get customized astrology readings tailored to your specific birth chart and life
-                                circumstances.</p>
-                        </div>
-                        <div class="usp-card">
-                            <div class="usp-icon">💫</div>
-                            <h3>24/7 Availability</h3>
-                            <p>Connect with our astrologers anytime through WhatsApp for immediate guidance and support.
-                            </p>
-                        </div>
-                        <div class="usp-card">
-                            <div class="usp-icon">🌟</div>
-                            <h3>Proven Results</h3>
-                            <p>Thousands of satisfied clients have found clarity and direction through our accurate
-                                predictions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Astrologers Section -->
-        <section id="astrologers" class="astrologers-section">
-            <div class="container">
-                <h2 class="section-title">Our Certified Astrologers</h2>
-                <div class="astrologers-grid">
-                    <div class="astrologer-card">
-                        <div class="astrologer-image">
-                            <img src="WhatsApp Image 2025-07-28 at 20.56.26_8a909a9e.jpg" alt="Aditi Bargujar">
-                        </div>
-                        <div class="astrologer-info">
-                            <h3>Aditi Bargujar</h3>
-                            <p class="astrologer-specialty">Vedic Astrologer & Tarot Reader</p>
-                            <p class="astrologer-experience">5+ Years of Experience</p>
-                            <div class="certificates">
-                                <div class="certificate">
-                                    <i class="fas fa-certificate"></i>
-                                    <span>Advanced Vastu Course - Academy of Acharya</span>
-                                </div>
-                                <div class="certificate">
-                                    <i class="fas fa-certificate"></i>
-                                    <span>Professional Vedic Tarot - Akashvani Tarot</span>
-                                </div>
-                            </div>
-                            <div class="astrologer-rating">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <span>4.9/5 (150+ reviews)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="astrologer-card">
-                        <div class="astrologer-image">
-                            <img src="WhatsApp Image 2025-07-28 at 20.56.26_a8159633.jpg" alt="Kartik Mukherjee">
-                        </div>
-                        <div class="astrologer-info">
-                            <h3>Kartik Mukherjee</h3>
-                            <p class="astrologer-specialty">Senior Vedic Astrologer & Mentor</p>
-                            <p class="astrologer-experience">10+ Years of Experience</p>
-                            <div class="certificates">
-                                <div class="certificate">
-                                    <i class="fas fa-certificate"></i>
-                                    <span>Advanced Astrology - Academy of Acharya</span>
-                                </div>
-                                <div class="certificate">
-                                    <i class="fas fa-certificate"></i>
-                                    <span>Vastu Shastra Expert - International Institute</span>
-                                </div>
-                            </div>
-                            <div class="astrologer-rating">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <span>4.8/5 (200+ reviews)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Contact & Payment Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h2 class="section-title">Get Your Consultation Today</h2>
-                        <p class="contact-description">
-                            Fill out the form below and our expert astrologers will get back to you within 24 hours.
-                            Choose your preferred service and make payment through the QR code.
-                        </p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fab fa-whatsapp"></i>
-                                <span>WhatsApp: +91 98765 43210</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>Email: info@astroblessings.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-clock"></i>
-                                <span>Available 24/7</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form-container">
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-header">
-                                <h3>Radhe Radhe ji 🙏</h3>
-                                <p>Is form ko fill kar dijiye, jisse mai apke bhavishye ki Jankari de saku.</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="service">Service Interested In *</label>
-                                <select id="service" name="service" required>
-                                    <option value="">Select Service</option>
-                                    <option value="birth-chart">Birth Chart Analysis</option>
-                                    <option value="love-relationship">Love & Relationship</option>
-                                    <option value="career">Career Guidance</option>
-                                    <option value="vastu">Vastu Consultation</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Preferred Consultation Mode *</label>
-                                <div>
-                                    <label><input type="radio" name="mode" value="whatsapp" required> WhatsApp</label>
-                                    <label><input type="radio" name="mode" value="call"> Call</label>
-                                    <label><input type="radio" name="mode" value="email"> Email</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Name * <span class="hindi-text">(नाम)</span></label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="birthDate">Date of Birth * <span class="hindi-text">(जन्म
-                                        तिथि)</span></label>
-                                <input type="date" id="birthDate" name="birthDate" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="birthTime">Birth Time <span class="hindi-text">(जन्म समय)</span></label>
-                                <input type="time" id="birthTime" name="birthTime">
-                            </div>
-                            <div class="form-group">
-                                <label for="birthPlace">Birth Place <span class="hindi-text">(जन्म स्थान)</span></label>
-                                <input type="text" id="birthPlace" name="birthPlace" placeholder="City, State">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number * <span class="hindi-text">(फोन नंबर)</span></label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Apki Problem or unse jude sawal * <span class="hindi-text">(आपकी
-                                        समस्या और उससे जुड़े सवाल)</span></label>
-                                <textarea id="message" name="message" rows="4" required
-                                    placeholder="Please describe your problem or questions in detail..."></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="photos">Hand Photos <span class="hindi-text">(हाथ की
-                                        तस्वीरें)</span></label>
-                                <input type="file" id="photos" name="photos" accept="image/*" multiple>
-                                <small class="form-note">Agar ye details nahi h to apne Dono hath ki photos bhej
-                                    dijiye.</small>
-                            </div>
-
-                            <!-- Payment Section -->
-                            <div class="payment-requirement">
-                                <h4>Payment Required * <span class="hindi-text">(भुगतान आवश्यक)</span></h4>
-                                <p>Please complete payment before submitting the form</p>
-                                <div class="payment-status" id="paymentStatus">
-                                    <i class="fas fa-times-circle"></i>
-                                    <span>Payment not completed</span>
-                                </div>
-                                <button type="button" class="payment-btn" onclick="showPaymentModal()">
-                                    <i class="fas fa-qrcode"></i> Complete Payment
-                                </button>
-                            </div>
-
-                            <button type="submit" class="submit-btn" disabled id="submitBtn">
-                                <i class="fas fa-paper-plane"></i> Submit & Get Consultation
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Payment Modal -->
-        <div id="paymentModal" class="payment-modal">
-            <div class="payment-modal-content">
-                <div class="payment-modal-header">
-                    <h3>Complete Payment</h3>
-                    <button class="close-modal" onclick="closePaymentModal()">&times;</button>
-                </div>
-                <div class="payment-modal-body">
-                    <div class="qr-section">
-                        <h4>Scan QR Code to Pay</h4>
-                        <div class="qr-code-modal">
-                            <img src="https://via.placeholder.com/200x200/1e40af/ffffff?text=QR+Code" alt="Payment QR Code">
-                        </div>
-                        <p class="qr-instructions">Scan this QR code with your UPI app to complete payment</p>
-                    </div>
-                    <div class="payment-details-modal">
-                        <h4>Payment Details</h4>
-                        <div class="payment-info-item">
-                            <span>Amount:</span>
-                            <span class="amount">₹501</span>
-                        </div>
-                        <div class="payment-info-item">
-                            <span>UPI ID:</span>
-                            <span>astroblessings@upi</span>
-                        </div>
-                        <div class="payment-info-item">
-                            <span>Account:</span>
-                            <span>Astro Blessings</span>
-                        </div>
-                    </div>
-                    <div class="payment-confirmation">
-                        <label class="checkbox-container">
-                            <input type="checkbox" id="paymentConfirm">
-                            <span class="checkmark"></span>
-                            I have completed the payment
-                        </label>
-                        <button class="confirm-payment-btn" onclick="confirmPayment()" disabled>
-                            Confirm Payment & Enable Form
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <div class="logo-symbol">◐</div>
-                        <span class="logo-text">Astro Blessings</span>
-                    </div>
-                    <p>Professional astrology services to guide you through life's journey with wisdom from the stars.
+                <p class="info-desc">
+                    <strong>सिर्फ ₹99 में पाएं अपनी व्यक्तिगत ज्योतिष रिपोर्ट</strong><br>
+                    <span class="en">Get your personalized astrology report for just ₹99!</span>
+                </p>
+                <div class="instructions">
+                    <p style="font-size:1.1rem; color:#1e40af; margin-bottom:10px;">
+                        <b>बस फॉर्म भरें और अपनी रिपोर्ट पाएं!</b><br>
+                        <span class="en">Just fill the form and get your report!</span>
+                    </p>
+                    <ul>
+                        <li>नाम / Name</li>
+                        <li>जन्म तिथि / Date of Birth</li>
+                        <li>जन्म समय / Birth Time</li>
+                        <li>जन्म स्थान / Birth Place</li>
+                        <li>अपनी समस्या या सवाल / Your Problem or Questions</li>
+                    </ul>
+                    <p>
+                        <strong>अगर ये डिटेल्स नहीं हैं तो अपने दोनों हाथ की फोटो भेजें।</strong><br>
+                        <span class="en">If you don't have these details, please send photos of both your hands.</span>
                     </p>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#astrologers">Our Astrologers</a></li>
-                        <li><a href="#vastu-calendar">Vastu Calendar</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <ul>
-                        <li>Birth Chart Analysis</li>
-                        <li>Love & Relationship</li>
-                        <li>Career Guidance</li>
-                        <li>Vastu Consultation</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <div class="footer-contact">
-                        <p><i class="fab fa-whatsapp"></i> +91 98765 43210</p>
-                        <p><i class="fas fa-envelope"></i> info@astroblessings.com</p>
-                        <p><i class="fas fa-clock"></i> Available 24/7</p>
+                <div class="contact-info">
+                    <button class="whatsapp-btn" onclick="openWhatsApp()">
+                        <i class="fab fa-whatsapp"></i> WhatsApp पर बात करें / Chat on WhatsApp
+                    </button>
+                    <div class="contact-details">
+                        <span><i class="fas fa-phone"></i> +91 94560 40100</span>
+                        <span><i class="fas fa-envelope"></i> astroblessings@gmail.com</span>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Astro Blessings. All rights reserved.</p>
+            <!-- Right: Form -->
+            <div class="form-card">
+                <h2 class="form-title">Consultation Form</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">नाम / Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="अपना नाम / Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthDate">जन्म तिथि / Date of Birth *</label>
+                        <input type="date" id="birthDate" name="birthDate" required placeholder="जन्म तिथि / Date of Birth">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthTime">जन्म समय / Birth Time</label>
+                        <input type="time" id="birthTime" name="birthTime" placeholder="जन्म समय / Birth Time">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthPlace">जन्म स्थान / Birth Place</label>
+                        <input type="text" id="birthPlace" name="birthPlace" placeholder="शहर, राज्य / City, State">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">अपनी समस्या या सवाल / Your Problem or Questions *</label>
+                        <textarea id="message" name="message" rows="3" required placeholder="अपनी समस्या या सवाल लिखें / Write your problem or question"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="handImages">अगर आपके पास ऊपर की जानकारी नहीं है तो दोनों हाथ की फोटो अपलोड करें (Optional)<br>
+    Upload photos of both hands if you don't have the above details (Optional)</label>
+                        <input type="file" id="handImages" name="handImages" accept="image/*" multiple>
+                    </div>
+                    <div class="form-group payment-confirm">
+                        <button type="button" class="pay-btn" onclick="showPaymentModal()">Pay Now</button>
+                    </div>
+                    <div id="paymentStatus" class="payment-status">
+                        <i class="fas fa-times-circle"></i><span>Payment not completed</span>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn" disabled>Submit</button>
+                </form>
             </div>
         </div>
-    </footer>
+    </section>
 
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="payment-modal">
+        <div class="payment-modal-content">
+            <span class="close-modal" onclick="closePaymentModal()">&times;</span>
+            <h3>Complete Your Payment</h3>
+            <p>Scan the QR code below to pay. After payment, check the box in the form.</p>
+            <div class="qr-code">
+                <img src="WhatsApp Image 2025-08-02 at 01.59.50_e211d5e8.jpg" alt="QR Code" />
+            </div>
+            <label>
+                <input type="checkbox" id="paymentConfirmModal">
+                I have paid
+            </label>
+            <button class="confirm-payment-btn" onclick="confirmPayment()" disabled>Confirm Payment</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
